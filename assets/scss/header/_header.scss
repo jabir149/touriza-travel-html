@@ -33,7 +33,7 @@
         }
         a{
             font-family: var(--font-primary);
-            transition: .3s;
+            transition: var(--transition);
         }
         .rts-btn{
             @media(max-width:576px){

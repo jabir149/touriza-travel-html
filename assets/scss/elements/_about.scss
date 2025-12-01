@@ -354,6 +354,9 @@
     margin-left: 70px;
     position: relative;
     z-index: 1;
+    .floating-img{
+        max-width: max-content;
+    }
     .rotate-img {
         position: absolute;
         right: 20px;
