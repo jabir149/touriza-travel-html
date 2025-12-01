@@ -361,32 +361,6 @@
             color: var(--color-heading-1);
         }
     }
-    &.header-nine{
-        padding: 0 80px;
-        .top-header-area {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 0;
-            .left{
-                p {
-                    color: var(--color-white);
-                    font-family: var(--font-secondary);
-                    a{
-                        text-decoration: underline;
-                    }
-                }
-            }
-            .right {
-                .social-area{
-                    a {
-                        margin-right: 10px;
-                        color: var(--color-white);
-                    }
-                }
-            }
-        }
-    }
 }
 
 .header-style-two{
@@ -565,6 +539,57 @@
             justify-content: flex-start;
         }
     }
+    &.header-nine {
+        padding: 0 80px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        .header-top{
+            padding: 20px 0 24px;
+            background: transparent;
+            border:none;
+
+            .left{
+                p{
+                    color: var(--color-white);
+                    a{
+                        color: var(--color-white);
+                        text-decoration: underline;
+                    }
+                }
+            }
+            .right-information {
+                .cart {
+                    color: var(--color-white);
+                    font-weight: 500;
+                }
+                .rts-dropdown-menu .has-child-menu a {
+                    color: var(--color-white);
+                }
+            }
+        }
+        .header-main-inner {
+            background: var(--color-white);
+            border-radius: 100px;
+            padding: 0 20px;
+        }
+        
+        .main-nav-area {
+            margin-left: 0;
+            .rts-desktop-menu {
+                .menu-item {
+                    .rts-dropdown-main-element {
+                        padding: 25px 20px;
+                    }
+                }
+            }
+        }
+        .header-style-one-wrapper .left-area{
+            flex-basis: 40%;
+        }
+    }
 }
 .header-five{
     .header-style-one-wrapper{
@@ -622,6 +647,11 @@
             &:hover {
                 border-color: var(--color-primary) !important;
             }
+        }
+    }
+    &.header-nine {
+        .header-main-inner{
+            background: none;
         }
     }
 }
