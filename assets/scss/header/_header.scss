@@ -560,6 +560,17 @@
                     }
                 }
             }
+            .social-area {
+                li {
+                    a {
+                        color: var(--color-white);
+                        transition: var(--transition);
+                        &:hover {
+                            color: var(--color-primary);
+                        }
+                    }
+                }
+            }
             .right-information {
                 .cart {
                     color: var(--color-white);

@@ -94,6 +94,48 @@
             }
         }
     }
+    &.kayaking{
+        .single-footer-widget-one{
+            ul {
+                li {
+                    svg {
+                        path {
+                           fill: var(--color-body-1);
+                        }
+                    }
+                    a {
+                        position: relative;
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            left: 0;
+                            bottom: 4px;
+                            width: 0;
+                            height: 2px;
+                            background: var(--color-heading-1);
+                            transition: var(--transition);
+                        }
+                    }
+                    &:hover {
+                        svg {
+                            path {
+                                fill: var(--color-heading-1);
+                            }
+                        }
+                        a {
+                            color: var(--color-heading-1);
+                            &::after {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footer-input-main-wrapper-one .single-footer-widget-one form input{
+            border-color: var(--color-primary);
+        }
+    }
 }
 
 .single-footer-widget-one{
