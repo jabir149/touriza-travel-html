@@ -724,33 +724,33 @@
         });
       });
       $(document).ready(function () {
-        // Swiper Init
-        var swiper = new Swiper(".tour-slider-pack-two", {
-          slidesPerView: 4,
+        let defaults = {
           spaceBetween: 30,
+          slidesPerView: 2,
           speed: 1800,
           mousewheel: {
             sensitivity: 1,
             releaseOnEdges: true,
-          },
-          navigation: {
-            nextEl: ".swiper-btn-next",
-            prevEl: ".swiper-btn-prev",
-          },
-          pagination: {
-            el: ".swiper-pagination",
-            type: "progressbar",
-          },
-          breakpoints: {
-            1500: { slidesPerView: 4 },
-            1300: { slidesPerView: 4 },
-            991: { slidesPerView: 3 },
-            767: { slidesPerView: 2 },
-            575: { slidesPerView: 2 },
-            450: { slidesPerView: 1 },
-            0: { slidesPerView: 1 },
-          },
-        });
+          }
+        };
+        // Call reusable swiper initializer
+        initSwipers(defaults);
+        function initSwipers(defaults = {}, selector = ".swiper-data") {
+          let swipers = document.querySelectorAll(selector);
+          swipers.forEach((swiper) => {
+            // get per-slider options
+            let optionsData = swiper.dataset.swiper
+              ? JSON.parse(swiper.dataset.swiper)
+              : {};
+            // merge defaults + custom
+            let options = {
+              ...defaults,
+              ...optionsData,
+            };
+            // Init Swiper
+            new Swiper(swiper, options);
+          });
+        }
       });
       $(document).ready(function () {
         var swiper = new Swiper(".travel-slider", {
