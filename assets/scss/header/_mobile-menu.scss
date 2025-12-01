@@ -223,6 +223,12 @@
             }
         }
     }
+    &.header-eight {
+        background: var(--color-secondary);
+        .mobile-menu-main nav ul li.has-droupdown::after{
+            color: var(--color-white);
+        }
+    }
 }
 .header-one .main-nav-desk nav ul li.has-droupdown .submenu.inner-page{
     .sub-dropdown{

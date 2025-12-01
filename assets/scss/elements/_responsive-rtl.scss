@@ -129,6 +129,9 @@
         .rts-tour-details-area .bottom-content-area .feature-list-area li{
             width: 27%;
         }
+        .advance__search__section.travel-agency {
+            max-width: 100%;
+        }
     }
     @media(max-width:1400px) and (min-width:1200px){
         .rts-banner-area-one .rts-hero-banner{
@@ -812,6 +815,14 @@
         .menu-btn-toggle2{
             display: none;
         }
+        .about-img-area{
+            margin-right: 0;
+        }
+        .about-img-area .rotate-img {
+            right: unset;
+            left: 120px;
+        }
+    
     }
     @media(max-width:991px) and (min-width:768px){
         .package-wrapper3 .content{

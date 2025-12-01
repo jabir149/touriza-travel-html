@@ -12694,6 +12694,12 @@ body.sal-disabled [data-sal|=flip] {
     display: none !important;
   }
 }
+.side-bar.header-eight {
+  background: var(--color-secondary);
+}
+.side-bar.header-eight .mobile-menu-main nav ul li.has-droupdown::after {
+  color: var(--color-white);
+}
 
 .header-one .main-nav-desk nav ul li.has-droupdown .submenu.inner-page .sub-dropdown {
   position: relative;
@@ -13869,6 +13875,9 @@ ul li {
 }
 .travel-agency .rts-btn.btn-primary-3 {
   font-family: "Roboto", sans-serif;
+}
+.travel-agency .rtl-ltr-switcher-btn {
+  color: var(--color-secondary);
 }
 
 .kayaking {
@@ -21535,6 +21544,9 @@ body.with-sidebar {
   margin-left: 0;
   margin-right: 120px;
 }
+[dir=rtl] .header-eight .header-style-one-wrapper .main-nav-area {
+  margin-right: 0;
+}
 [dir=rtl] .main-nav-area ul.rts-desktop-menu .rts-has-dropdown .rts-submenu.mega-menu .ad-image .ad-content,
 [dir=rtl] .package-wrapper4 .tag {
   left: unset;
@@ -24066,6 +24078,9 @@ body.with-sidebar {
   [dir=rtl] .rts-tour-details-area .bottom-content-area .feature-list-area li {
     width: 27%;
   }
+  [dir=rtl] .advance__search__section.travel-agency {
+    max-width: 100%;
+  }
 }
 @media (max-width: 1400px) and (min-width: 1200px) {
   [dir=rtl] .rts-banner-area-one .rts-hero-banner {
@@ -24748,6 +24763,13 @@ body.with-sidebar {
   }
   [dir=rtl] .menu-btn-toggle2 {
     display: none;
+  }
+  [dir=rtl] .about-img-area {
+    margin-right: 0;
+  }
+  [dir=rtl] .about-img-area .rotate-img {
+    right: unset;
+    left: 120px;
   }
 }
 @media (max-width: 991px) and (min-width: 768px) {
