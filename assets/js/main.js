@@ -501,37 +501,41 @@
         });
       });
       $(document).ready(function () {
-        // Background slider
         var gallerySlider = new Swiper(".gallery-slider-active", {
           slidesPerView: 1,
           speed: 1200,
           effect: "fade",
+          loop: true,
+          loopedSlides: $(".gallery-slider-active .swiper-slide").length,
           autoplay: {
             delay: 6000,
             disableOnInteraction: false,
           },
-          loop: true,
           pagination: {
             el: ".slider-dots",
             clickable: true,
           },
         });
 
-        // Content slider
         var galleryContent = new Swiper(".gallery-content-active", {
           slidesPerView: 1,
           speed: 1200,
+          loop: true,
+          loopedSlides: $(".gallery-content-active .swiper-slide").length,
           autoplay: {
             delay: 6000,
             disableOnInteraction: false,
           },
-          loop: true,
         });
 
-        // Sync both sliders
+        // Manual sync on slide change
+        gallerySlider.on("slideChange", function () {
+          galleryContent.slideToLoop(gallerySlider.realIndex);
+        });
 
-        gallerySlider.controller.control = galleryContent;
-        galleryContent.controller.control = gallerySlider;
+        galleryContent.on("slideChange", function () {
+          gallerySlider.slideToLoop(galleryContent.realIndex);
+        });
       });
 
       $(document).ready(function () {
