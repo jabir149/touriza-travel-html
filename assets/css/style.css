@@ -12048,7 +12048,7 @@ body.sal-disabled [data-sal|=flip] {
   color: var(--color-secondary) !important;
 }
 .header--sticky.sticky.header-eight .header-style-one-wrapper .button-area-start .rts-btn.btn-border-2:hover {
-  border-color: transparent !important;
+  border-color: var(--color-primary) !important;
 }
 
 .header-style-two.header--sticky.sticky,

@@ -620,7 +620,7 @@
             border-color: #000000 !important;
             color: var(--color-secondary) !important;
             &:hover {
-                border-color: transparent !important;
+                border-color: var(--color-primary) !important;
             }
         }
     }
