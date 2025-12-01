@@ -12951,6 +12951,7 @@ body.sal-disabled [data-sal|=flip] {
 .side-bar .inner-main-wrapper-desk .inner-content .footer a.rts-btn {
   margin: auto;
 }
+
 .rts-sidebar-menu-desktop .logo-area {
   padding-bottom: 30px;
   margin-bottom: 30px;
@@ -23659,6 +23660,10 @@ body.with-sidebar {
 
   .rts-banner-area-eight .rts-hero-banner {
     height: 500px;
+  }
+
+  .cta-section-inner.agency-two {
+    padding: 50px 30px;
   }
 }
 @media (max-width: 450px) {
