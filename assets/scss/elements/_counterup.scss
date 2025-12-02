@@ -6,6 +6,9 @@
         align-items: center;
         gap: 25px;
         justify-content: space-between;
+        &.kayaking{
+            margin-top: 40px;
+        }
     }
 }
 .counter-wrapper{

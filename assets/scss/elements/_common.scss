@@ -1183,10 +1183,11 @@ body.with-sidebar{
     right: 0;
 }
 
-.container-fluid{
+.rts-custom-container{
     max-width: 1760px;
     padding-right: var(--bs-gutter-x,.75rem);
     padding-left: var(--bs-gutter-x,.75rem);
     margin-right: auto;
     margin-left: auto
 }
+

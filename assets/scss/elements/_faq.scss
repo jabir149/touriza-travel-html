@@ -1,9 +1,15 @@
 // faq area style here
 .rts-faq-area.kayaking {
     background: #E3FFFC;
+    .faq-content{
+        margin-left: 120px;
+    }
     .accordion {
         .accordion-item {
             border-color: #B7EAE4;
+        }
+        .accordion-body {
+            max-width: 780px;
         }
     }
 }

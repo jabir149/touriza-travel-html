@@ -282,6 +282,41 @@
             color: var(--color-primary);
         }
     }
+    &.kayaking{
+        .wishlist{
+            background: var(--color-white);
+            transition: var(--transition);
+            i{
+                color: var(--color-primary);
+                transition: var(--transition);
+            }
+        }
+        .content {
+            padding: 20px 0 0;
+            border: none;
+            .meta-content {
+                .location {
+                    color: var(--color-primary);
+                }
+            }
+            .title {
+                font-size: 19px;
+                text-transform: capitalize;
+            }
+            .price {
+                margin-top: 16px;
+                color: var(--color-body-1);
+            }
+        }
+        &:hover{
+            .wishlist{
+                background: var(--color-primary);
+                i{
+                    color: var(--color-white);
+                }
+            }
+        }
+    }
 }
 
 .package-wrapper4{
@@ -639,4 +674,10 @@
             }
         }
     }
+}
+
+.rts-tour-packages-wrapper{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 30px;
 }

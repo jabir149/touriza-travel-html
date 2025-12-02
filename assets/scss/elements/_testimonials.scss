@@ -144,6 +144,31 @@
         }
     }
 }
+.rts-testimonials-area.kayaking{
+    .swiper-pagination-area{
+        z-index: 1;
+        .slider-dots{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+        }
+        .swiper-pagination-bullet{
+            width: 8px;
+            height: 8px;
+            border-radius: 0;
+            margin: 0;
+            opacity: 1;
+            background: transparent;
+            border: 1px solid var(--color-primary);
+            transform: rotate(45deg);
+            &.swiper-pagination-bullet-active{
+                background: var(--color-primary);
+            }
+        }
+    }
+}
+
 
 .testimonials-wrapper-three{
     position: relative;

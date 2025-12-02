@@ -118,6 +118,17 @@
     .rts-tour-details-area .bottom-content-area .feature-list-area li{
         width: 27%;
     }
+    .destination-wrapper-area{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .rts-tour-packages-wrapper{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .rts-features-wrapper{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 30px;
+    }
 }
 @media(max-width:1400px) and (min-width:1200px){
     .rts-banner-area-one .rts-hero-banner{
@@ -362,6 +373,12 @@
     .rts-testimonials-area.travel-agency .swiper-navigation .swiper-btn.swiper-btn-next5{
         right: 0;
     }
+    .destination-wrapper-area{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .rts-tour-packages-wrapper{
+        grid-template-columns: repeat(3,1fr);
+    }
 }
 @media(max-width:1200px) and (min-width:991px){
     .rts-banner-area-one .rts-hero-banner{
@@ -462,6 +479,9 @@
     .blog-wrapper3 .content-area .blog-title{
         font-size: 26px;
     }
+    .blog-wrapper3.kayaking .content-area .blog-title{
+        font-size: 20px;
+    }
     .rts-tour-deal-area .left-area{
         display: flex;
         gap: 30px;
@@ -541,11 +561,11 @@
         br {
             display: none;
         }
+        }
+        .desc {
+            margin-bottom: 20px;
+        }
     }
-    .desc {
-        margin-bottom: 20px;
-    }
-}
     .about-img-area{
         margin-left: 0;
     }
@@ -849,6 +869,18 @@
     }
     .rts-banner-area-eight .is__home__eight .section-title {
         font-size: 90px;
+    }
+    .rts-faq-area.kayaking .faq-content{
+        margin-left: 0;
+    }
+    .destination-wrapper-area{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .rts-tour-packages-wrapper{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .rts-cta-area.kayaking{
+        padding: 160px 0;
     }
 }
 @media(max-width:991px) and (min-width:768px){
@@ -1413,7 +1445,19 @@
         height: 500px;
     }
     .cta-section-inner.agency-two {
-    padding: 50px 30px;
+        padding: 50px 30px;
+    }
+    .destination-wrapper-area{
+        grid-template-columns: 1fr;
+    }
+    .rts-tour-packages-wrapper{
+        grid-template-columns: 1fr;
+    }
+    .rts-cta-area.kayaking{
+        padding: 120px 0;
+    }
+    .rts-features-wrapper{
+        grid-template-columns: 1fr;
     }
 }
 @media(max-width:576px) and (min-width:450px){

@@ -228,3 +228,88 @@
         }
     }
 }
+
+.rts-cta-area.kayaking{
+    padding: 209px 0;
+    position: relative;
+    z-index: 1;
+    background-attachment: fixed;
+    &::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        inset: 0;
+        z-index: -1;
+        background: rgba(#000000, $alpha: .3);
+    }
+    .cta-wrapper-area{
+        max-width: 1500px;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+        .content{
+            max-width: 570px;
+            .title{
+                color: var(--color-white);
+                margin-bottom: 16px;
+            }
+            .desc{
+                color: var(--color-white);
+                margin-bottom: 35px;
+            }
+            .inp-area {
+                position: relative;
+                input {
+                    background: var(--color-white);
+                    border-radius: 100px;
+                    padding: 12px 24px;
+                    font-size: 14px;
+                    font-family: var(--font-four);
+                    font-weight: 500;
+                }
+                .rts-btn-send{
+                    background: none;
+                    border: none;
+                    max-width: max-content;
+                    position: absolute;
+                    right: 15px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+        .video-button-area{
+            .vedio-icone{
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                .video-text{
+                    margin-bottom: 0;
+                    color: var(--color-white);
+                    font-family: "Roboto", sans-serif;
+                }
+            }
+        }
+    }
+}
+.rts-features-wrapper{
+    background: #E3FFFC;
+    padding: 70px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    .features-item {
+        .icon{
+            margin-bottom: 20px;
+        }
+        .content{
+            max-width: 300px;
+        }
+    }
+}
