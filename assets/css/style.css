@@ -15606,6 +15606,7 @@ body.with-sidebar {
   left: 0;
   top: 0;
   z-index: -1;
+  pointer-events: none;
 }
 .rts-banner-area-nine .banner-content-wrapper .section-title {
   font-size: 100px;
@@ -22774,6 +22775,10 @@ body.with-sidebar {
   .rts-tour-packages-wrapper {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .rts-banner-area-nine .banner-content-wrapper .section-title {
+    font-size: 80px;
+  }
 }
 @media (max-width: 1200px) and (min-width: 991px) {
   .rts-banner-area-one .rts-hero-banner {
@@ -23411,6 +23416,23 @@ body.with-sidebar {
   .rts-cta-area.kayaking {
     padding: 160px 0;
   }
+
+  .header-style-two.header-nine {
+    padding: 0 !important;
+  }
+
+  .header-style-two.header-nine .header-top {
+    display: none;
+  }
+
+  .header-style-two.header-nine .header-main-inner {
+    padding: 20px !important;
+    border-radius: 0;
+  }
+
+  .rts-banner-area-nine .section-inner {
+    padding-top: 200px;
+  }
 }
 @media (max-width: 991px) and (min-width: 768px) {
   .package-wrapper3 .content {
@@ -23765,6 +23787,19 @@ body.with-sidebar {
 
   .rts-banner-area-eight .rts-hero-banner {
     height: 550px;
+  }
+
+  .rts-banner-area-nine .banner-content-wrapper .section-title {
+    font-size: 60px;
+  }
+
+  .rts-banner-area-nine .banner-content-wrapper .bottom-area {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .rts-banner-area-nine .section-inner {
+    padding-top: 150px;
   }
 }
 @media (max-width: 768px) and (min-width: 576px) {
@@ -24427,6 +24462,10 @@ body.with-sidebar {
 
   .rts-banner-area-six .rts-banner-wrapper .banner-wrapper-inner .banner-title {
     font-size: 36px;
+  }
+
+  .rts-banner-area-nine .banner-content-wrapper .section-title {
+    font-size: 50px;
   }
 }
 @media (max-width: 1800px) {
