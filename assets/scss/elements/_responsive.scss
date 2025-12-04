@@ -129,8 +129,13 @@
     }
     .rts-features-wrapper{
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(2,1fr);
         gap: 30px;
+        .features-item{
+            &:nth-child(2){
+                border: none;
+            }
+        }
     }
 }
 @media(max-width:1400px) and (min-width:1200px){
@@ -385,7 +390,7 @@
     .rts-tour-packages-wrapper{
         grid-template-columns: repeat(3,1fr);
     }
-    .rts-banner-area-nine .banner-content-wrapper .section-title{
+    .rts-banner-area-nine .is__home__nine .banner-content-wrapper .section-title {
         font-size: 80px;
     }
 }
@@ -908,12 +913,24 @@
     .rts-banner-area-nine .section-inner{
         padding-top: 200px;
     }
-    .rts-banner-area-nine .form-area{
+    .rts-banner-area-nine .is__home__nine .form-area{
         margin-right: 0;
     }
     .about-left-image-area {
         margin-right: 0;
     }
+    .rts-banner-area-nine .is__home__nine {
+        padding: 200px 0;
+    }
+    .rts-banner-area-nine{
+        height: auto;
+    }
+    .features-item{
+        &:nth-child(3){
+            padding-left: 0;
+        }
+    }
+
 }
 @media(max-width:991px) and (min-width:768px){
     .package-wrapper3 .content{
@@ -1209,6 +1226,10 @@
     }
     .about-left-image-area .trip-card{
         display: none;
+    }
+    .features-item{
+        padding: 0 !important;
+        border: none !important;
     }
 }
 @media(max-width:768px) and (min-width:576px){
@@ -1508,6 +1529,9 @@
         flex-wrap: wrap;
         gap: 30px;
     }
+        .rts-banner-area-nine .is__home__nine{
+            padding: 160px 0;
+        }
 }
 @media(max-width:576px) and (min-width:450px){
 
@@ -1732,10 +1756,14 @@
     .rts-banner-area-six .rts-banner-wrapper .banner-wrapper-inner .banner-title{
         font-size: 36px;
     }
-    .rts-banner-area-nine .banner-content-wrapper .section-title{
-        font-size: 50px;
+    .rts-banner-area-nine .is__home__nine .banner-content-wrapper .section-title {
+        font-size: 55px;
     }
     .about-left-image-area .floating-image{
         display: none;
+    }
+    .rts-banner-area-nine .is__home__nine .banner-content-wrapper .bottom-area{
+        margin-top: 30px;
+        gap: 30px;
     }
 }

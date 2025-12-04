@@ -351,8 +351,31 @@
         right: unset;
         left: 0;
     }
-    .rts-cta-area.kayaking .cta-wrapper-area .content .inp-area .rts-btn-send {
+    .rts-banner-area-nine .is__home__nine .form-area .custom-select .icon,
+    .rts-banner-area-nine .is__home__nine .form-area .custom-cal .icon{
+        left: unset;
+        right: 12px
+    }
+    .rts-banner-area-nine .is__home__nine .form-area .custom-select .dropdown-icon,
+    .rts-banner-area-nine .is__home__nine .form-area .custom-cal .icon{
         right: unset;
-        left: 15px;
+        left: 20px;
+    }
+    .rts-banner-area-nine .is__home__nine .form-area .custom-select-trigger,
+    .rts-banner-area-nine .is__home__nine .form-area .custom-cal input{
+        padding-right: 40px;
+    }
+    .rts-marquee-area .marquee-wrapper .marquee-track{
+        direction: ltr;
+    }
+    .rts-features-wrapper .features-item:last-child{
+        padding-left: 0;
+        padding-right: 67px;
+        border-right: 1px solid #B7EAE4;
+    }
+    .rts-features-wrapper .features-item:first-child{
+        padding-left: 70px;
+        padding-right: 0;
+        border-right: none;
     }
 }
