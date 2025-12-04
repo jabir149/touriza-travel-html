@@ -372,6 +372,9 @@
                 padding: 20px;
             } 
         }
+        .about-left-image-area .floating-image{
+            left: -40px;
+        }
     }
     @media(max-width:1200px) and (min-width:991px){
         .rts-banner-area-one .rts-hero-banner{
@@ -1345,6 +1348,9 @@
             .service-wrapper{
                 width: 100%;
             } 
+        }
+        .about-left-image-area{
+            margin-left: 0;
         }
     }
     @media(max-width:576px) and (min-width:450px){

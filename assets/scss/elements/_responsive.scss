@@ -29,6 +29,9 @@
     .rts-service-area.inner{
         margin: 0;
     }
+    .about-left-image-area .floating-image {
+        max-width: 275px;
+    }
 }
 @media(max-width:1400px){
     .header-style-one{
@@ -224,6 +227,9 @@
     }
     .rts-tour-area.inner.with-map .tour-wrapper .content .title{
         font-size: 18px;
+    }
+    .about-left-image-area .floating-image{
+        max-width: 200px;
     }
 }
 @media(max-width:1365px){
@@ -528,6 +534,10 @@
     }
     .rts-gallery-slider-area{
         height: 700px;
+    }
+    .about-left-image-area .floating-image {
+        max-width: 200px;
+        right: -40px;
     }
 }
 @media(max-width:991px){
@@ -898,6 +908,12 @@
     .rts-banner-area-nine .section-inner{
         padding-top: 200px;
     }
+    .rts-banner-area-nine .form-area{
+        margin-right: 0;
+    }
+    .about-left-image-area {
+        margin-right: 0;
+    }
 }
 @media(max-width:991px) and (min-width:768px){
     .package-wrapper3 .content{
@@ -1190,6 +1206,9 @@
     }
     .rts-banner-area-nine .section-inner{
         padding-top: 150px;
+    }
+    .about-left-image-area .trip-card{
+        display: none;
     }
 }
 @media(max-width:768px) and (min-width:576px){
@@ -1485,6 +1504,10 @@
     .rts-features-wrapper{
         grid-template-columns: 1fr;
     }
+    .about-right-content-area .about-bottom-area {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
 }
 @media(max-width:576px) and (min-width:450px){
 
@@ -1711,5 +1734,8 @@
     }
     .rts-banner-area-nine .banner-content-wrapper .section-title{
         font-size: 50px;
+    }
+    .about-left-image-area .floating-image{
+        display: none;
     }
 }
