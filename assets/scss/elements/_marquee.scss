@@ -4,45 +4,49 @@
     .marquee-wrapper {
         background: var(--color-primary);
         padding: 20px 0;
-        overflow: hidden;
-        position: relative;
-        
+
+        &.two {
+            background: var(--color-secondary);
+            position: relative;
+            bottom: 75px;
+            transform: rotate(-3deg);
+            z-index: -1;
+        }
+
         .marquee-track {
             display: flex;
             gap: 40px;
             white-space: nowrap;
             align-items: center;
             will-change: transform;
-            animation: marquee 20s linear infinite;
+            animation: marquees 20s linear infinite;
         }
 
         .marquee-item {
             display: flex;
             align-items: center;
-            gap: 28px;
+            gap: 40px;
 
             .title {
                 color: var(--color-white);
                 margin-bottom: 0;
             }
 
-            
-            span {
-                display: flex;
-                align-items: center;
-                margin: 0 40px;
+
+            img {
+                margin-right: 40px;
             }
         }
     }
 }
 
 /* marquee animation */
-@keyframes marquee {
-   0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
+@keyframes marquees {
+    0% {
+        transform: translateX(0%);
+    }
 
+    100% {
+        transform: translateX(-70%);
+    }
+}

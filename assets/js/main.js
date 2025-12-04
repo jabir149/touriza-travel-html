@@ -18,6 +18,7 @@
 16. rtsJs.rtlToggle();
 
 
+
 ==================================================*/
 
 (function ($) {
@@ -60,6 +61,7 @@
       rtsJs.projectBlockActive();
       rtsJs.itineraryAccordion();
       rtsJs.priceRangeSlider();
+      rtsJs.datePicker();
     },
     swiperActivation: function () {
       $(document).ready(function () {
@@ -1605,6 +1607,11 @@
 
       // Initialize
       updateRange();
+    },
+    datePicker: function () {
+      $(document).ready(function () {
+        $(".datepicker9").datepicker();
+      });
     },
   };
   rtsJs.m();
