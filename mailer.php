@@ -1,50 +1,47 @@
 <?php
-// Only process POST requests
+// Only process POST reqeusts.
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Sanitize and trim inputs
+    // Get the form fields and remove whitespace.
     $name = strip_tags(trim($_POST["name"]));
     $name = str_replace(array("\r", "\n"), array(" ", " "), $name);
-
     $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-
-    $company = isset($_POST["company"]) ? strip_tags(trim($_POST["company"])) : '';
-    $website = isset($_POST["website"]) ? filter_var(trim($_POST["website"]), FILTER_SANITIZE_URL) : '';
-
     $message = trim($_POST["message"]);
 
-    // Validate required fields
-    if (empty($name) || empty($message) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    // Check that data was sent to the mailer.
+    if (empty($name) or empty($message) or !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        // Set a 400 (bad request) response code and exit.
         http_response_code(400);
         echo "Oops! There was a problem with your submission. Please complete the form and try again.";
         exit;
     }
 
-    // Recipient email
-    $recipient = "support@reactheme.com"; // <-- Update to your email
+    // Set the recipient email address.
+    // FIXME: Update this to your desired email address.
+    $recipient = "support@reactheme.com";
 
-    // Email subject
-    $subject = "Touriza Contact Form: $name";
+    // Set the email subject.
+    $subject = "Touriza Contact Form $name";
 
-    // Build email content
+    // Build the email content.
     $email_content = "Name: $name\n";
     $email_content .= "Email: $email\n";
-    if ($company) $email_content .= "Company: $company\n";
-    if ($website) $email_content .= "Website: $website\n";
     $email_content .= "Message:\n$message\n";
 
-    // Email headers
+    // Build the email headers.
     $email_headers = "From: $name <$email>";
 
-    // Send email
+    // Send the email.
     if (mail($recipient, $subject, $email_content, $email_headers)) {
+        // Set a 200 (okay) response code.
         http_response_code(200);
-        echo "Thank you! Your message has been sent.";
+        echo "Thank You! Your message has been sent.";
     } else {
+        // Set a 500 (internal server error) response code.
         http_response_code(500);
         echo "Oops! Something went wrong and we couldn't send your message.";
     }
 } else {
-    // Not a POST request
+    // Not a POST request, set a 403 (forbidden) response code.
     http_response_code(403);
     echo "There was a problem with your submission, please try again.";
 }
