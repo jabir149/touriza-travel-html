@@ -21942,7 +21942,7 @@ body.with-sidebar {
 .destination-wrapper-5 .content-area .title a:hover {
   color: var(--color-primary);
 }
-.destination-wrapper-5 .image-area::after {
+.destination-wrapper-5 .image-area a::after {
   content: "";
   position: absolute;
   width: 100%;

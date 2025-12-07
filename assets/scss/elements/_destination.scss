@@ -270,14 +270,16 @@
         }
     }
     .image-area{
-        &::after{
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            inset: 0;
-            z-index: 1;
-            background: linear-gradient(180deg, rgba(6, 71, 63, 0) 59.5%, #06473F 100%);
+        a {
+            &::after{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                inset: 0;
+                z-index: 1;
+                background: linear-gradient(180deg, rgba(6, 71, 63, 0) 59.5%, #06473F 100%);
+            }
         }
     }
 }
