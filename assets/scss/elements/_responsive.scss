@@ -391,7 +391,20 @@
         grid-template-columns: repeat(3,1fr);
     }
     .rts-banner-area-nine .is__home__nine .banner-content-wrapper .section-title {
-        font-size: 80px;
+        font-size: 75px;
+    }
+    .rts-destination-wrapper,
+    .rts-about-wrapper,
+    .rts-features-wrapper-area,
+    .rts-tour-packages-wrapper-area,
+    .rts-cta-wrapper,
+    .rts-testimonials-wrapper,
+    .rts-blog-wrapper,
+    .rts-faq-wrapper{
+        margin: auto 50px;
+    }
+    .rts-banner-area-nine .is__home__nine .form-area{
+        margin-right: 0;
     }
 }
 @media(max-width:1200px) and (min-width:991px){
@@ -913,9 +926,7 @@
     .rts-banner-area-nine .section-inner{
         padding-top: 200px;
     }
-    .rts-banner-area-nine .is__home__nine .form-area{
-        margin-right: 0;
-    }
+    
     .about-left-image-area {
         margin-right: 0;
     }
@@ -930,7 +941,16 @@
             padding-left: 0;
         }
     }
-
+    .rts-destination-wrapper,
+    .rts-about-wrapper,
+    .rts-features-wrapper-area,
+    .rts-tour-packages-wrapper-area,
+    .rts-cta-wrapper,
+    .rts-testimonials-wrapper,
+    .rts-blog-wrapper,
+    .rts-faq-wrapper{
+        margin: auto 30px;
+    }
 }
 @media(max-width:991px) and (min-width:768px){
     .package-wrapper3 .content{
@@ -1529,9 +1549,19 @@
         flex-wrap: wrap;
         gap: 30px;
     }
-        .rts-banner-area-nine .is__home__nine{
-            padding: 160px 0;
-        }
+    .rts-banner-area-nine .is__home__nine{
+        padding: 160px 0;
+    }
+    .rts-destination-wrapper,
+    .rts-about-wrapper,
+    .rts-features-wrapper-area,
+    .rts-tour-packages-wrapper-area,
+    .rts-cta-wrapper,
+    .rts-testimonials-wrapper,
+    .rts-blog-wrapper,
+    .rts-faq-wrapper{
+        margin: auto 15px;
+    }
 }
 @media(max-width:576px) and (min-width:450px){
 
@@ -1757,7 +1787,7 @@
         font-size: 36px;
     }
     .rts-banner-area-nine .is__home__nine .banner-content-wrapper .section-title {
-        font-size: 55px;
+        font-size: 50px;
     }
     .about-left-image-area .floating-image{
         display: none;

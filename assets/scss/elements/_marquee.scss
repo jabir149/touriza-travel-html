@@ -20,6 +20,9 @@
             align-items: center;
             will-change: transform;
             animation: marquees 20s linear infinite;
+            &.two {
+                animation: marquees2 20s linear infinite;
+            }
         }
 
         .marquee-item {
@@ -47,5 +50,16 @@
 
     100% {
         transform: translateX(-70%);
+    }
+}
+
+// left to right
+@keyframes marquees2 {
+    0% {
+        transform: translateX(-70%);
+    }
+
+    100% {
+        transform: translateX(0%);
     }
 }

@@ -563,10 +563,18 @@
             .social-area {
                 li {
                     a {
-                        color: var(--color-white);
-                        transition: var(--transition);
+                        svg {
+                            path {
+                                fill: var(--color-white);
+                                transition: var(--transition);
+                            }
+                        }
                         &:hover {
-                            color: var(--color-primary);
+                            svg {
+                                path {
+                                    fill: var(--color-primary);
+                                }
+                            }
                         }
                     }
                 }

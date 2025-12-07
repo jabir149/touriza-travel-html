@@ -1128,6 +1128,9 @@
         z-index: -1;
         pointer-events: none;
     }
+    .banner-slider-active9 {
+        animation: zoomEffect 40s ease-in-out infinite;
+    }
     .is__home__nine{
         padding-top: 260px;
         .banner-content-wrapper {
@@ -1337,27 +1340,6 @@
                     max-width: 100%;
                     text-transform: uppercase;
                 }
-            }
-        }
-    }
-    .swiper-pagination-fraction{
-        position: absolute;
-        z-index: 1;
-        display: flex;
-        flex-direction: column;
-        max-width: 21px;
-        left: 50%;
-        bottom: 60px;
-        transform: translateX(-50%);
-        gap: 10px;
-        span{
-            display: block;
-            color: var(--color-white);
-            font-family: var(--font-primary);
-            line-height: 1;
-            &.divider{
-                background: var(--color-white);
-                height: 2px;
             }
         }
     }

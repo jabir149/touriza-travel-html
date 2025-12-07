@@ -1183,18 +1183,14 @@ body.with-sidebar{
     right: 0;
 }
 
-.rts-custom-container{
-    max-width: 1760px;
-    padding-right: var(--bs-gutter-x,.75rem);
-    padding-left: var(--bs-gutter-x,.75rem);
-    margin-right: auto;
-    margin-left: auto
-}
-.rts-custom-container2{
-    max-width: 1500px;
-    padding-right: var(--bs-gutter-x,.75rem);
-    padding-left: var(--bs-gutter-x,.75rem);
-    margin-right: auto;
-    margin-left: auto
+.rts-destination-wrapper,
+.rts-about-wrapper,
+.rts-features-wrapper-area,
+.rts-tour-packages-wrapper-area,
+.rts-cta-wrapper,
+.rts-testimonials-wrapper,
+.rts-blog-wrapper,
+.rts-faq-wrapper{
+    margin: auto 80px;
 }
 

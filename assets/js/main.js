@@ -160,68 +160,18 @@
         }
       });
       $(document).ready(function () {
+        $(document).ready(function () {
         var swiper = new Swiper(".banner-slider-active9", {
           slidesPerView: 1,
-          loop: true,
-          speed: 1500,
-          spaceBetween: 0,
+          speed: 1200,
+          effect: "fade",
           autoplay: {
-            delay: 4000,
+            delay: 6000,
             disableOnInteraction: false,
           },
-
-          // Navigation arrows
-          navigation: {
-            nextEl: ".swiper-btn-next",
-            prevEl: ".swiper-btn-prev",
-          },
-
-          // Right-side numbered vertical pagination
-          pagination: {
-            el: ".swiper-pagination-vertical",
-            clickable: true,
-            renderBullet: function (index, className) {
-              let num = (index + 1).toString().padStart(2, "0"); // 01, 02
-              return '<span class="' + className + '">' + num + "</span>";
-            },
-          },
-
-          // Creative slide effect
-          effect: "creative",
-          creativeEffect: {
-            prev: {
-              scale: 1.1,
-              opacity: 0,
-              translate: [0, 0, 0],
-            },
-            next: {
-              scale: 1.3,
-              opacity: 0,
-              translate: [0, 0, 0],
-            },
-          },
-
-          // Update fraction on change
-          on: {
-            init: function () {
-              updateFraction(this);
-            },
-            slideChange: function () {
-              updateFraction(this);
-            },
-          },
+          loop: true,
         });
-
-        // Bottom-left fraction update
-        function updateFraction(swiper) {
-          let current = (swiper.realIndex + 1).toString().padStart(2, "0");
-          let total = swiper.slides.length - swiper.loopedSlides * 2;
-          total = total.toString().padStart(2, "0");
-
-          $(".swiper-pagination-fraction").html(
-            `<span class="current">${current}</span><span class="divider"></span><span class="total">${total}</span>`
-          );
-        }
+      });
       });
       $(document).ready(function () {
         var swiper = new Swiper(".testimonials-slider", {
