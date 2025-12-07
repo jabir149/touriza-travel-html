@@ -25,6 +25,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Build the email content.
     $email_content = "Name: $name\n";
     $email_content .= "Email: $email\n";
+    $email_content .= "Company:\n$company\n";
+    $email_content .= "Website:\n$website\n";
     $email_content .= "Message:\n$message\n";
 
     // Build the email headers.
