@@ -454,7 +454,7 @@
     <section class="rts-contact-area inner rts-section-gap">
         <div class="container">
             <div class="section-inner body-bg-one radius-10">
-                <form class="contact-form" method="POST" action="mailer.php">
+                <!-- <form class="contact-form" method="POST" action="mailer.php">
                     <h4 class="title">Your info</h4>
                     <div class="form-inner">
                         <div class="left">
@@ -473,6 +473,40 @@
                             <div class="single-input-wrapper">
                                 <label for="website">Website</label>
                                 <input type="text" id="website" name="website" placeholder="Your website" required>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="single-input-wrapper">
+                                <label for="message">Your Enquiry*</label>
+                                <textarea name="message" id="message" placeholder="Enter your message here" required></textarea>
+                            </div>
+                            <div class="single-input-wrapper">
+                                <button type="submit" class="rts-btn btn-primary with-arrow">Get Started <i class="fa-regular fa-arrow-up up-right"></i></button>
+                            </div>
+                            <div id="form-messages" class="mt-15 cb"></div>
+                            <p class="desc">Please read our <a href="#"> privacy policy</a> and <a href="#">Cookies policy</a> so you understand how we collect and use your personal data.</p>
+                        </div>
+                    </div>
+                </form> -->
+                <form id="contact-form" class="contact-form" method="POST" action="mailer.php">
+                    <h4 class="title">Your info</h4>
+                    <div class="form-inner">
+                        <div class="left">
+                            <div class="single-input-wrapper">
+                                <label for="name">Full Name*</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="single-input-wrapper">
+                                <label for="email">Email*</label>
+                                <input type="email" id="email" name="email" placeholder="Your email address" required>
+                            </div>
+                            <div class="single-input-wrapper">
+                                <label for="company">Company</label>
+                                <input type="text" id="company" name="company" placeholder="Your company name">
+                            </div>
+                            <div class="single-input-wrapper">
+                                <label for="website">Website</label>
+                                <input type="url" id="website" name="website" placeholder="Your website">
                             </div>
                         </div>
                         <div class="right">
