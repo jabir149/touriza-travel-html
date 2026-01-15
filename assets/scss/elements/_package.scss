@@ -167,6 +167,9 @@
                 }
             }
         }
+        .location {
+            color: var(--color-primary);
+        }
         .bottom-meta{
             display: flex;
             align-items: center;
@@ -680,4 +683,84 @@
     display: grid;
     grid-template-columns: repeat(5,1fr);
     gap: 30px;
+}
+
+.package-wrapper6{
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    &::after{
+        display: none;
+    }
+    .image-area{
+        position: relative;
+        z-index: 1;
+        a{
+            position: relative;
+            z-index: 1;
+            display: block;
+        }
+    }
+    .wishlist{
+        position: absolute;
+        z-index: 2;
+        right: 20px;
+        top: 20px;
+        width: 40px;
+        height: 40px;
+        line-height: 45px;
+        border-radius: 50%;
+        color: var(--color-white);
+        background: rgba(#000000, $alpha: .3);
+        display: block;
+        text-align: center;
+        transition: var(--transition);
+    }
+    .content{
+        padding: 25px 0 0;
+        .meta-content{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin: 0;
+            margin-bottom: 13px;
+
+            .star-rating-area{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 0;
+                font-family: var(--font-four);
+                font-weight: 500;
+                line-height: 1;
+                i {
+                    color: var(--color-primary);
+                }
+            }
+            .location {
+                color: var(--color-primary);
+            }
+        }
+        .title{
+            font-size: 24px;
+            line-height: 1.1;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            a {
+                font-family: inherit;
+            }
+        }
+        .price{
+            margin-top: 12px;
+            font-family: var(--font-four);
+            font-weight: 500;
+            line-height: 1;
+        }
+    }
+
+    &:hover {
+        .wishlist {
+            background: var(--color-primary);
+        }
+    }
 }

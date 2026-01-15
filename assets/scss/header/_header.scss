@@ -61,7 +61,14 @@
             }
         }
     }
-    
+    &.header-style-ten {
+        .left-area {
+            flex-basis: 75%;
+        }
+        .button-area-start {
+            flex-basis: 25%;
+        }
+    }
 }
 
 .header-style-one{
@@ -609,6 +616,75 @@
             flex-basis: 40%;
         }
     }
+    &.header-ten {
+        position: absolute;
+        width: 100%;
+        z-index: 999;
+        .header-top {
+            padding: 21px 0;
+            border-color: transparent;
+            .header-top-inner {
+                .left {
+                    .desc {
+                        color: var(--color-white);
+                        a {
+                            color: var(--color-white);
+                            &:hover {
+                                color: var(--color-primary);
+                            }
+                        }
+                    }
+                }
+                .right {
+                    .social-area {
+                        li {
+                            a {
+                                color: var(--color-white);
+                                &:hover {
+                                    color: var(--color-primary);
+                                }
+                            }
+                        }
+                    }
+                    .header-utility {
+                        li {
+                            a {
+                                color: var(--color-white);
+                            }
+                            .sub-menu {
+                                li {
+                                    a {
+                                        color: var(--color-heading-1);
+                                        &:hover {
+                                            color: var(--color-white);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .header-main {
+            .header-main-inner {
+                background: var(--color-white);
+                padding: 0 14px;
+                border-radius: 6px;
+
+                .main-nav-area {
+                    ul {
+                        li {
+                            a {
+                                padding: 24px 22px;
+                                font-family: inherit !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 .header-five{
     .header-style-one-wrapper{
@@ -672,6 +748,14 @@
         .header-main-inner{
             background: none;
             padding: 0;
+        }
+    }
+    &.header-ten {
+        .header-main{
+            .header-main-inner{
+                background: none;
+                padding: 0;
+            }
         }
     }
 }

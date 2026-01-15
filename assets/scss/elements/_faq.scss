@@ -76,3 +76,19 @@
         }
     }
 }
+
+.rts-faq-area.carcamping{
+    .accordion {
+        .accordion-item {
+            .accordion-header {
+                button {
+                    font-weight: var(--s-regular);
+                }
+            }
+            .accordion-body {
+                font-family: var(--font-four);
+                color: #525252;
+            }
+        }
+    }
+}

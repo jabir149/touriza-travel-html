@@ -1251,6 +1251,9 @@
         padding: 0 !important;
         border: none !important;
     }
+    .carcamping .section-title-area .section-title {
+        font-size: 50px;
+    }
 }
 @media(max-width:768px) and (min-width:576px){
     .rts-counter-area .section-inner .counter-wrapper .icon{
@@ -1795,5 +1798,11 @@
     .rts-banner-area-nine .is__home__nine .banner-content-wrapper .bottom-area{
         margin-top: 30px;
         gap: 30px;
+    }
+    .carcamping .section-title-area .section-title {
+        font-size: 36px;
+    }
+    .rts-faq-area.carcamping .accordion .accordion-item .accordion-header button {
+        font-size: 20px;
     }
 }

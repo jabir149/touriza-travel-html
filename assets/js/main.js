@@ -489,7 +489,6 @@
           gallerySlider.slideToLoop(galleryContent.realIndex);
         });
       });
-
       $(document).ready(function () {
         var swiper = new Swiper(".brand-slider", {
           slidesPerView: 5,
@@ -674,6 +673,20 @@
           breakpoints: {
             1200: { slidesPerView: 4 },
             911: { slidesPerView: 3 },
+            767: { slidesPerView: 2 },
+            0: { slidesPerView: 1 },
+          }
+        });
+      });
+      $(document).ready(function () {
+        var swiper = new Swiper(".tour-slider-pack-two", {
+          slidesPerView: 4,
+          spaceBetween: 30,
+          speed: 1800,
+          loop: true,
+          breakpoints: {
+            1200: { slidesPerView: 4 },
+            992: { slidesPerView: 3 },
             767: { slidesPerView: 2 },
             0: { slidesPerView: 1 },
           }
@@ -905,6 +918,50 @@
           },
         });
       });
+       $(document).ready(function () {
+        var swiper = new Swiper(".testimonials-slider5", {
+          slidesPerView: 4,
+          spaceBetween: 30,
+          speed: 1200,
+          loop: true,
+          navigation: {
+            nextEl: ".swiper-btn-next3",
+            prevEl: ".swiper-btn-prev3",
+          },
+          pagination: {
+            el: ".slider-dots",
+            clickable: true,
+          },
+          breakpoints: {
+            1400: {
+              slidesPerView: 4,
+            },
+            1200: {
+              slidesPerView: 4,
+              spaceBetween: 10,
+            },
+            991: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            767: {
+              slidesPerView: 2,
+              mousewheel: false,
+            },
+            575: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            450: {
+              slidesPerView: 1,
+              mousewheel: false,
+            },
+            0: {
+              slidesPerView: 1,
+            },
+          },
+        });
+      });
     },
 
     wowActive: function () {
@@ -961,7 +1018,6 @@
         });
       });
     },
-
     countDown: function () {
       $(function () {
         countDown.init();
@@ -1066,7 +1122,6 @@
         },
       };
     },
-
     videoActivation: function (e) {
       $(document).ready(function () {
         $(".popup-youtube, .popup-video").magnificPopup({
