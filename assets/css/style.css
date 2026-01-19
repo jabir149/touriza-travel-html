@@ -12687,6 +12687,9 @@ body.sal-disabled [data-sal|=flip] {
   border-bottom: 1px solid #f3f3f3;
   cursor: pointer;
 }
+.mobile-menu-main nav ul li a.main.eight {
+  color: #0D0D0D;
+}
 .mobile-menu-main nav ul li.has-droupdown {
   position: relative;
 }
@@ -12780,6 +12783,15 @@ body.sal-disabled [data-sal|=flip] {
   .side-bar.header-two .mobile-menu, .side-bar.header-three .mobile-menu {
     display: none !important;
   }
+}
+.side-bar.header-eight {
+  background: var(--color-secondary);
+}
+.side-bar.header-eight .mobile-menu-main nav ul li {
+  color: var(--color-white);
+}
+.side-bar.header-eight .mobile-menu-main nav ul li.has-droupdown::after {
+  color: var(--color-white);
 }
 
 .header-one .main-nav-desk nav ul li.has-droupdown .submenu.inner-page .sub-dropdown {
@@ -16102,6 +16114,9 @@ body.with-sidebar {
   font-size: 28px;
   line-height: 1;
   margin-bottom: 30px;
+}
+.rts-banner-area-ten .banner-tour-pack-slider .tour-item .content .title a {
+  font-family: inherit;
 }
 .rts-banner-area-ten .banner-tour-pack-slider .tour-item .content .bottom {
   display: flex;
@@ -22767,12 +22782,11 @@ body.with-sidebar {
   transition: 0.4s ease-in-out;
 }
 .destinations-wrapper .destination-card .destination-content {
+  padding: 0 40px 40px;
   position: absolute;
-  left: 40px;
-  right: 40px;
-  bottom: 40px;
+  left: 0;
+  bottom: 0;
   z-index: 2;
-  max-width: 320px;
   width: 100%;
   visibility: hidden;
   opacity: 0;
@@ -22783,11 +22797,13 @@ body.with-sidebar {
   font-size: 32px;
   line-height: 28px;
 }
+.destinations-wrapper .destination-card .destination-content .title a {
+  font-family: inherit;
+}
 .destinations-wrapper .destination-card .destination-content .bottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 20px;
 }
 .destinations-wrapper .destination-card .destination-content .bottom p {
   margin-bottom: 0;
@@ -23206,6 +23222,35 @@ body.with-sidebar {
 }
 [dir=rtl] .rts-banner-area-ten .banner-tour-pack-slider .swiper-nav-pag-area {
   left: unset;
+}
+[dir=rtl] .rts-banner-area-ten .is__home__ten .circle {
+  right: unset;
+  left: 16%;
+}
+[dir=rtl] .destinations-wrapper .destination-card .destination-content .title {
+  text-align: end;
+}
+[dir=rtl] .destinations-wrapper .destination-card .destination-content .bottom .icon {
+  order: -1;
+}
+[dir=rtl] .rts-tour-packages-area.carcamping .section-top-area .tour-navigation-area .text-btn i {
+  margin-left: unset;
+  margin-right: 8px;
+}
+[dir=rtl] .package-wrapper6 .content .meta-content {
+  justify-content: end;
+}
+[dir=rtl] .package-wrapper6 .content .meta-content .location {
+  order: -1;
+}
+[dir=rtl] .package-wrapper6 .content .title {
+  text-align: end;
+}
+[dir=rtl] .package-wrapper6 .content .price {
+  text-align: end;
+}
+[dir=rtl] .rts-features-wrapper.carcamping .features-item {
+  border-color: #FFD5B3;
 }
 
 @media (max-width: 1800px) {
@@ -23721,6 +23766,39 @@ body.with-sidebar {
   .rts-banner-area-nine .is__home__nine .form-area {
     margin-right: 0;
   }
+
+  .carcamping .section-title-area .section-title br {
+    display: none;
+  }
+
+  .rts-banner-area-ten {
+    height: 900px;
+  }
+
+  .rts-banner-area-ten .is__home__ten {
+    padding-top: 250px;
+  }
+
+  .rts-cta-area.carcamping {
+    height: 550px;
+  }
+
+  .rts-footer-area-one.carcamping .footer-inner-two {
+    padding-top: 270px;
+  }
+
+  .counter-wrapper-area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+  .counter-wrapper-area .single-counter {
+    justify-content: center;
+  }
+
+  .rts-features-wrapper.carcamping .features-item:last-child {
+    padding-left: 0;
+  }
 }
 @media (max-width: 1200px) and (min-width: 991px) {
   .rts-banner-area-one .rts-hero-banner {
@@ -23914,6 +23992,27 @@ body.with-sidebar {
   .about-left-image-area .floating-image {
     max-width: 200px;
     right: -40px;
+  }
+
+  .about-right-image-area .about-images-area .main-image,
+.about-right-image-area .about-images-area .second-image {
+    height: 420px;
+  }
+  .about-right-image-area .about-images-area .main-image img,
+.about-right-image-area .about-images-area .second-image img {
+    height: 100%;
+  }
+
+  .about-right-image-area .review-area {
+    padding: 15px;
+  }
+
+  .rts-banner-area-ten .banner-tour-pack-slider {
+    left: 50%;
+  }
+
+  .rts-banner-area-ten .banner-tour-pack-slider .swiper-nav-pag-area {
+    max-width: 500px;
   }
 }
 @media (max-width: 991px) {
@@ -24415,6 +24514,42 @@ body.with-sidebar {
   .header--sticky.sticky.header-ten .header-main .header-main-inner {
     padding: 10px 0;
   }
+
+  .about-right-image-area .about-images-area .main-image img,
+.about-right-image-area .about-images-area .second-image img {
+    width: 100%;
+  }
+
+  .about-right-image-area {
+    margin-left: 0;
+  }
+
+  .rts-banner-area-ten {
+    height: auto;
+  }
+  .rts-banner-area-ten .is__home__ten {
+    padding: 200px 0 50px;
+  }
+  .rts-banner-area-ten .is__home__ten .banner-content-wrapper .banner-section-title-area .banner-title {
+    font-size: 100px;
+    line-height: 0.9;
+  }
+  .rts-banner-area-ten .banner-tour-pack-slider {
+    position: relative;
+    left: 5%;
+    padding-bottom: 100px;
+    margin-right: -200px;
+  }
+  .rts-banner-area-ten .banner-tour-pack-slider .swiper-nav-pag-area {
+    max-width: 70%;
+    bottom: 20px;
+    left: 15px;
+    right: 15px;
+  }
+
+  .rts-banner-area-ten .is__home__ten .circle {
+    display: none;
+  }
 }
 @media (max-width: 991px) and (min-width: 768px) {
   .package-wrapper3 .content {
@@ -24795,6 +24930,12 @@ body.with-sidebar {
 
   .carcamping .section-title-area .section-title {
     font-size: 50px;
+    line-height: 0.9;
+  }
+
+  .rts-tour-packages-area.carcamping .section-top-area {
+    flex-wrap: wrap;
+    gap: 30px;
   }
 }
 @media (max-width: 768px) and (min-width: 576px) {
@@ -25197,6 +25338,83 @@ body.with-sidebar {
   .header-style-two.header-ten .header-main .header-main-inner {
     padding: 10px 0;
   }
+
+  .about-right-image-area .trip-card {
+    display: none;
+  }
+
+  .about-right-image-area .main-image img,
+.about-right-image-area .second-image img {
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .about-right-image-area .review-area {
+    display: none;
+  }
+
+  .about-left-content-area .about-bottom-area {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .rts-banner-area-ten .is__home__ten .banner-content-wrapper .banner-section-title-area .banner-title {
+    font-size: 80px;
+  }
+
+  .rts-banner-area-ten .is__home__ten {
+    padding-top: 150px;
+  }
+  .rts-banner-area-ten .is__home__ten .banner-content-wrapper .banner-btn-review-area {
+    flex-wrap: wrap;
+  }
+  .rts-banner-area-ten .banner-tour-pack-slider {
+    margin-left: 0;
+    margin-right: 0;
+    left: 0;
+    padding: 0 15px 100px;
+  }
+  .rts-banner-area-ten .banner-tour-pack-slider .tour-item {
+    flex-wrap: wrap;
+  }
+  .rts-banner-area-ten .banner-tour-pack-slider .tour-item .thumb img {
+    width: 100%;
+  }
+  .rts-banner-area-ten .banner-tour-pack-slider .tour-item .content {
+    width: 100%;
+  }
+  .rts-banner-area-ten .banner-tour-pack-slider .tour-item .content .bottom {
+    justify-content: space-between;
+  }
+
+  .rts-cta-area.carcamping {
+    height: 450px;
+  }
+
+  .why-choose-us-left-image-area .right-image {
+    display: none;
+  }
+
+  .why-choose-us-right-content-area .why-choose-item-wrapper .single-item {
+    flex-wrap: wrap;
+  }
+
+  .rts-features-wrapper.carcamping {
+    padding: 30px;
+  }
+
+  .destinations-wrapper .destination-card .destination-content {
+    max-width: 100%;
+    padding: 0 20px 20px;
+  }
+
+  .counter-wrapper-area {
+    grid-template-columns: 1fr;
+  }
+
+  .rts-footer-area-one.carcamping::before {
+    height: 100%;
+  }
 }
 @media (max-width: 450px) {
   .about-img-area .rotate-img {
@@ -25505,6 +25723,28 @@ body.with-sidebar {
 
   .rts-faq-area.carcamping .accordion .accordion-item .accordion-header button {
     font-size: 20px;
+  }
+
+  .rts-banner-area-ten .is__home__ten .banner-content-wrapper .banner-section-title-area .banner-title {
+    font-size: 65px;
+  }
+
+  .rts-faq-area.carcamping {
+    margin-bottom: 0;
+    padding-bottom: 50px;
+  }
+
+  .rts-footer-area-one.carcamping .footer-inner-two {
+    padding-top: 100px;
+  }
+  .rts-footer-area-one.carcamping .footer-inner-two .footer-title-area .title {
+    font-size: 50px;
+    line-height: 1;
+  }
+
+  .rts-banner-area-ten .banner-tour-pack-slider .swiper-nav-pag-area {
+    max-width: 90%;
+    left: 20px;
   }
 }
 @media (max-width: 1800px) {
@@ -25888,6 +26128,10 @@ body.with-sidebar {
   [dir=rtl] .about-left-image-area .floating-image {
     left: -40px;
   }
+  [dir=rtl] .rts-features-wrapper.carcamping .features-item:last-child {
+    padding-left: unset;
+    padding-right: 0;
+  }
 }
 @media (max-width: 1200px) and (min-width: 991px) {
   [dir=rtl] .rts-banner-area-one .rts-hero-banner {
@@ -26023,6 +26267,24 @@ body.with-sidebar {
   }
   [dir=rtl] .rts-tour-area.inner .left-sidebar-area .side-box.blog-post .blog-list li, [dir=rtl] .rts-blog-area.inner .left-sidebar-area .side-box.blog-post .blog-list li {
     gap: 10px;
+  }
+  [dir=rtl] .rts-banner-area-ten .banner-tour-pack-slider {
+    left: unset;
+    right: 50%;
+  }
+  [dir=rtl] .rts-banner-area-ten .banner-tour-pack-slider .content {
+    order: -1;
+  }
+  [dir=rtl] .rts-banner-area-ten .banner-tour-pack-slider .content .top {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  [dir=rtl] .about-right-image-area {
+    margin-left: unset;
+  }
+  [dir=rtl] .about-right-image-area .review-area {
+    margin-left: 10px;
   }
 }
 @media (max-width: 991px) {
@@ -26340,6 +26602,12 @@ body.with-sidebar {
   }
   [dir=rtl] .rts-faq-area.kayaking .faq-content {
     margin-right: 0 !important;
+  }
+  [dir=rtl] .rts-banner-area-ten .banner-tour-pack-slider {
+    left: unset;
+    right: 5%;
+    margin-right: unset;
+    margin-left: -250px;
   }
 }
 @media (max-width: 991px) and (min-width: 768px) {
@@ -26863,6 +27131,13 @@ body.with-sidebar {
   }
   [dir=rtl] .about-left-image-area {
     margin-left: 0;
+  }
+  [dir=rtl] .rts-banner-area-ten .banner-tour-pack-slider {
+    right: 0;
+    margin-left: 0;
+  }
+  [dir=rtl] .accordion .accordion-item .accordion-header button {
+    padding-right: unset;
   }
 }
 @media (max-width: 450px) {

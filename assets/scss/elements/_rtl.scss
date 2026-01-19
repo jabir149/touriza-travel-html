@@ -401,4 +401,37 @@
     .rts-banner-area-ten .banner-tour-pack-slider .swiper-nav-pag-area{
         left: unset;
     }
+    .rts-banner-area-ten .is__home__ten .circle {
+        right: unset;
+        left: 16%;
+    }
+    .destinations-wrapper .destination-card .destination-content .title {
+        text-align: end;
+    }
+    .destinations-wrapper .destination-card .destination-content .bottom .icon {
+        order: -1;
+    }
+    .rts-tour-packages-area.carcamping .section-top-area .tour-navigation-area .text-btn i {
+        margin-left: unset;
+        margin-right: 8px;
+    }
+    .package-wrapper6 .content {
+        .meta-content {
+            justify-content: end;
+            .location {
+                order: -1;
+            }
+        }
+
+        .title {
+            text-align: end;
+        }
+
+        .price {
+            text-align: end;
+        }
+    }
+    .rts-features-wrapper.carcamping .features-item {
+        border-color: #FFD5B3;
+    }
 }

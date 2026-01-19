@@ -358,12 +358,11 @@
         }
 
         .destination-content {
+            padding: 0 40px 40px;
             position: absolute;
-            left: 40px;
-            right: 40px;
-            bottom: 40px;
+            left: 0;
+            bottom: 0;
             z-index: 2;
-            max-width: 320px;
             width: 100%;
             visibility: hidden;
             opacity: 0;
@@ -372,12 +371,14 @@
                 color: var(--color-white);
                 font-size: 32px;
                 line-height: 28px;
+                a {
+                    font-family: inherit;
+                }
             }
             .bottom {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                margin-top: 20px;
                 p {
                     margin-bottom: 0;
                     color: var(--color-white);  

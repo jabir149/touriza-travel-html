@@ -381,6 +381,10 @@
         .about-left-image-area .floating-image{
             left: -40px;
         }
+        .rts-features-wrapper.carcamping .features-item:last-child {
+            padding-left: unset;
+            padding-right: 0;
+        }
     }
     @media(max-width:1200px) and (min-width:991px){
         .rts-banner-area-one .rts-hero-banner{
@@ -516,6 +520,26 @@
         }
         .rts-tour-area.inner .left-sidebar-area .side-box.blog-post .blog-list li, .rts-blog-area.inner .left-sidebar-area .side-box.blog-post .blog-list li{
             gap: 10px;
+        }
+        .rts-banner-area-ten .banner-tour-pack-slider {
+            left: unset;
+            right: 50%;
+
+            .content {
+                order: -1;
+
+                .top  {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    justify-content: space-between;
+                }
+            }
+        }
+        .about-right-image-area {
+            margin-left: unset;
+        }
+        .about-right-image-area .review-area {
+            margin-left: 10px;
         }
     }
     @media(max-width:991px){
@@ -833,6 +857,13 @@
         }
         .rts-faq-area.kayaking .faq-content{
             margin-right: 0 !important;
+        }
+
+        .rts-banner-area-ten .banner-tour-pack-slider {
+            left: unset;
+            right: 5%;
+            margin-right: unset;
+            margin-left: -250px;
         }
     
     }
@@ -1360,6 +1391,13 @@
         }
         .about-left-image-area{
             margin-left: 0;
+        }
+        .rts-banner-area-ten .banner-tour-pack-slider{
+            right: 0;
+            margin-left: 0;
+        }
+        .accordion .accordion-item .accordion-header button{
+            padding-right: unset;
         }
     }
     @media(max-width:576px) and (min-width:450px){

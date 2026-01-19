@@ -201,6 +201,15 @@
             el: ".swiper-pagination",
             type: "progressbar",
           },
+          breakpoints: {
+            767: {
+              slidesPerView: 2,
+              autoplay: true,
+            },
+            0: {
+              slidesPerView: 1,
+            },
+          },
         })
       })
       $(document).ready(function () {

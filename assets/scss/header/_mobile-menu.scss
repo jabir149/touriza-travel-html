@@ -114,6 +114,9 @@
                     padding: 12px 0 17px 0;
                     border-bottom: 1px solid #f3f3f3;
                     cursor: pointer;
+                    &.eight {
+                        color: #0D0D0D;
+                    }
                 }
                 &.has-droupdown{
                     position: relative;
@@ -221,6 +224,15 @@
             @media screen and (min-width: 1024px) {
                 display: none !important;
             }
+        }
+    }
+    &.header-eight {
+        background: var(--color-secondary);
+        .mobile-menu-main nav ul li {
+            color: var(--color-white);
+        }
+        .mobile-menu-main nav ul li.has-droupdown::after {
+            color: var(--color-white);
         }
     }
 }

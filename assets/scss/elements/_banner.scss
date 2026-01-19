@@ -1514,6 +1514,9 @@
                     font-size: 28px;
                     line-height: 1;
                     margin-bottom: 30px;
+                    a {
+                        font-family: inherit;
+                    }
                 }
                 .bottom {
                     display: flex;
