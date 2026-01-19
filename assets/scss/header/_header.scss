@@ -64,6 +64,13 @@
     &.header-style-ten {
         .left-area {
             flex-basis: 75%;
+            .destination-area-wrapper {
+                .region-area {
+                    .view-all-btn {
+                        padding: 0;
+                    }
+                }
+            }
         }
         .button-area-start {
             flex-basis: 25%;

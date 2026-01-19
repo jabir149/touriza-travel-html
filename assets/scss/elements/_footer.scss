@@ -136,6 +136,57 @@
             border-color: var(--color-primary);
         }
     }
+    &.carcamping {
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            position: absolute;
+            content: '';
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 503px;
+            background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0.05) 92.94%);
+            z-index: -1;
+        }
+        .footer-inner-two {
+            padding-top: 390px;
+
+            .footer-title-area {
+                text-align: center;
+                .title {
+                    color: var(--color-white);
+                    font-size: 80px;
+                    line-height: 80px;
+                }
+                .rts-btn {
+                    margin: 35px auto 0;
+                    background: var(--color-white);
+                    color: var(--color-heading-1);
+                    padding: 19px 36px;
+                    &:hover {
+                        &::before {
+                            background: var(--color-primary);
+                        }
+                        color: var(--color-white);
+                    }
+                }
+            }
+        }
+
+        .copyright-area-start {
+            margin-top: 50px;
+            padding: 20px 0;
+            border-color: rgba(#ffffff,$alpha: .3);
+
+            p {
+                span {
+                    color: var(--color-white);
+                }
+            }
+        }
+    }
 }
 
 .single-footer-widget-one{

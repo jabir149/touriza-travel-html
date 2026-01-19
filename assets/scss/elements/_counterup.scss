@@ -31,3 +31,27 @@
         }
     }
 }
+.counter-wrapper-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 65px;
+    .single-counter {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .counter-area{
+            .title{
+                color: var(--color-white);
+                font-size: 64px;
+                font-weight: 600;
+                line-height: 1;
+                margin-bottom: -5px;
+            }
+            .done{
+                color: var(--color-white);
+                font-weight: 500;
+            }
+        }
+    }
+}

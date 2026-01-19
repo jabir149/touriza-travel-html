@@ -951,6 +951,12 @@
     .rts-faq-wrapper{
         margin: auto 30px;
     }
+    .header-style-two.header-ten .header-main .header-main-inner{
+        padding: 10px;
+    }
+    .header--sticky.sticky.header-ten .header-main .header-main-inner{
+        padding: 10px 0;
+    }
 }
 @media(max-width:991px) and (min-width:768px){
     .package-wrapper3 .content{
@@ -1564,6 +1570,12 @@
     .rts-blog-wrapper,
     .rts-faq-wrapper{
         margin: auto 15px;
+    }
+    .header-style-two.header-ten .header-main{
+        background: var(--color-white);
+        .header-main-inner {
+            padding: 10px 0;
+        }
     }
 }
 @media(max-width:576px) and (min-width:450px){

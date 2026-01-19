@@ -160,7 +160,6 @@
         }
       });
       $(document).ready(function () {
-        $(document).ready(function () {
         var swiper = new Swiper(".banner-slider-active9", {
           slidesPerView: 1,
           speed: 1200,
@@ -172,7 +171,38 @@
           loop: true,
         });
       });
+      $(document).ready(function () {
+         var swiper = new Swiper(".banner-slider-active10", {
+          slidesPerView: 1,
+          speed: 1200,
+          effect: "fade",
+          autoplay: {
+            delay: 6000,
+            disableOnInteraction: false,
+          },
+          loop: true,
+        });
       });
+      $(document).ready(function () {
+        var swiper = new Swiper(".banner-tour-pack-active", {
+          slidesPerView :2,
+          spaceBetween: 20,
+          speed: 1200,
+          loop: false,
+          mousewheel: {
+            sensitivity: 1,
+            releaseOnEdges: true,
+          },
+          navigation: {
+            nextEl: ".swiper-btn-next",
+            prevEl: ".swiper-btn-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            type: "progressbar",
+          },
+        })
+      })
       $(document).ready(function () {
         var swiper = new Swiper(".testimonials-slider", {
           slidesPerView: 1,

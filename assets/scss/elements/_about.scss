@@ -459,3 +459,45 @@
         }
     }
 }
+.about-left-content-area {
+    .section-title-area {
+        .section-title {
+            margin-bottom: 17px;
+        }
+        .desc {
+            text-transform: capitalize;
+            max-width: 550px;
+        }
+    }
+    .about-bottom-area {
+        margin-top: 42px;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        .rts-btn {
+            padding: 18px 36px;
+        }
+        .phone {
+            color: var(--color-primary);
+            i {
+                margin-right: 5px;
+            }
+        }
+    }
+}
+.about-right-image-area {
+    margin-left: 18px;
+    position: relative;
+    z-index: 1;
+    .about-images-area {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .trip-card {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 25%;
+    }
+}

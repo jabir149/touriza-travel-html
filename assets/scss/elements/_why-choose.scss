@@ -227,6 +227,7 @@
     align-items: center;
     gap: 22px;
 }
+
 .why-choose-wrapper-list2{
     display: flex;
     flex-wrap: wrap;
@@ -243,6 +244,95 @@
             .title{
                 text-transform: uppercase;
                 margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+.why-choose-us-left-image-area {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+    .right-image {
+        .review-area {
+            background: var(--color-bg-5);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            gap: 8px;
+            .icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 60px;
+                height: 60px;
+                background:#34E0A1 ;
+                border-radius: 50%;
+            }
+            .content {
+                .title {
+                    display: inline-block;
+                    color: var(--color-heading-1);
+                    font-weight: 500;
+                }
+                .ratting-star-area {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+
+                    .ratting {
+                        font-size: 40px;
+                        line-height: 1;
+                        margin-bottom: 0;
+                    }
+
+                    .star {
+                        display: flex;
+                        align-items: center;
+                        gap: 3px;
+                        i {
+                            color: #1EA171;
+                        }
+                    }
+                }
+                .desc {
+                    color: var(--color-heading-1);
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+.why-choose-us-right-content-area {
+    .section-title-area {
+        margin-bottom: 40px;
+    }
+    .why-choose-item-wrapper {
+        .single-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 25px;
+            &:not(:last-child) {
+                margin-bottom: 45px;
+            }
+            .icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-width: 66px;
+                height: 66px;
+                background: var(--color-bg-5);
+                border-radius: 50%;
+            }
+            .content {
+                .title {
+                    font-size: 28px;
+                    line-height: 28px;
+                    margin-bottom: 12px;
+                }
             }
         }
     }
