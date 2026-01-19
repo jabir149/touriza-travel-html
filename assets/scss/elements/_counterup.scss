@@ -44,9 +44,15 @@
             .title{
                 color: var(--color-white);
                 font-size: 64px;
-                font-weight: 600;
                 line-height: 1;
-                margin-bottom: -5px;
+                margin-bottom: -6px;
+                span{
+                    font-family: "Bebas Neue", sans-serif;
+                }
+                .odometer-auto-theme,.odometer.odometer-theme-default{
+                    font-family: "Bebas Neue", sans-serif;
+                    vertical-align: text-bottom;
+                }
             }
             .done{
                 color: var(--color-white);

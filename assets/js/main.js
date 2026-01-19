@@ -714,6 +714,10 @@
           spaceBetween: 30,
           speed: 1800,
           loop: true,
+          navigation: {
+            nextEl: ".tour-btn-next",
+            prevEl: ".tour-btn-prev",
+          },
           breakpoints: {
             1200: { slidesPerView: 4 },
             992: { slidesPerView: 3 },
@@ -948,7 +952,7 @@
           },
         });
       });
-       $(document).ready(function () {
+      $(document).ready(function () {
         var swiper = new Swiper(".testimonials-slider5", {
           slidesPerView: 4,
           spaceBetween: 30,
@@ -990,6 +994,142 @@
               slidesPerView: 1,
             },
           },
+        });
+      });
+      $(document).ready(function () {
+        $(".rts-card-slider").each(function () {
+          var rtsSlider = $(this);
+          var settings = rtsSlider.data("slider-options") || {};
+
+          // Navigation elements
+          var prevArrow = rtsSlider.find(".slider-prev");
+          var nextArrow = rtsSlider.find(".slider-next");
+
+          // Pagination elements
+          var paginationElN = rtsSlider.find(".slider-pagination.pagi-number");
+          var paginationExternel = rtsSlider
+            .siblings(".slider-controller")
+            .find(".slider-pagination");
+
+          var paginationEl = paginationExternel.length
+            ? paginationExternel.get(0)
+            : rtsSlider.find(".slider-pagination").get(0);
+
+          var paginationType = settings.paginationType || "bullets";
+          var autoplayconditon = settings.autoplay;
+
+          // Default slider configuration
+          var sliderDefault = {
+            slidesPerView: 1,
+            spaceBetween: settings.spaceBetween || 24,
+            loop: settings.loop !== false,
+            speed: settings.speed || 1000,
+            autoplay: autoplayconditon || {
+              delay: 6000,
+              disableOnInteraction: false,
+            },
+            navigation: {
+              nextEl: nextArrow.get(0),
+              prevEl: prevArrow.get(0),
+            },
+            pagination: {
+              el: paginationEl,
+              type: paginationType,
+              clickable: true,
+              renderBullet: function (index, className) {
+                var number = index + 1;
+                var formattedNumber = number < 10 ? "0" + number : number;
+
+                if (paginationElN.length) {
+                  return (
+                    '<span class="' +
+                    className +
+                    ' number">' +
+                    formattedNumber +
+                    "</span>"
+                  );
+                } else {
+                  return (
+                    '<span class="' +
+                    className +
+                    '" aria-label="Go to Slide ' +
+                    formattedNumber +
+                    '"></span>'
+                  );
+                }
+              },
+              formatFractionCurrent: function (number) {
+                return number < 10 ? "0" + number : number;
+              },
+              formatFractionTotal: function (number) {
+                return number < 10 ? "0" + number : number;
+              },
+            },
+            on: {
+              slideChange: function () {
+                setTimeout(function () {
+                  swiper.params.mousewheel.releaseOnEdges = false;
+                }, 500);
+              },
+              reachEnd: function () {
+                setTimeout(function () {
+                  swiper.params.mousewheel.releaseOnEdges = true;
+                }, 750);
+              },
+            },
+          };
+
+          // Merge custom options
+          var options = JSON.parse(
+            rtsSlider.attr("data-slider-options") || "{}",
+          );
+          options = $.extend({}, sliderDefault, options);
+
+          // Initialize Swiper
+          var swiper = new Swiper(rtsSlider.get(0), options);
+
+          // Arrow wrapper fix
+          if ($(".slider-area").length > 0) {
+            $(".slider-area")
+              .closest(".container")
+              .parent()
+              .addClass("arrow-wrap");
+          }
+
+          // Category slider wheel effect
+          if (rtsSlider.hasClass("categorySlider")) {
+            const multiplier = {
+              translate: 0.1,
+              rotate: 0.01,
+            };
+
+            function calculateWheel() {
+              const slides = document.querySelectorAll(".single");
+
+              slides.forEach((slide) => {
+                const rect = slide.getBoundingClientRect();
+                const r = window.innerWidth * 0.5 - (rect.x + rect.width * 0.5);
+
+                let ty =
+                  Math.abs(r) * multiplier.translate -
+                  rect.width * multiplier.translate;
+
+                if (ty < 0) ty = 0;
+
+                const transformOrigin = r < 0 ? "left top" : "right top";
+
+                slide.style.transform = `translate(0, ${ty}px) rotate(${-r * multiplier.rotate}deg)`;
+                slide.style.transformOrigin = transformOrigin;
+              });
+            }
+
+            function raf() {
+              requestAnimationFrame(raf);
+              calculateWheel();
+            }
+
+            raf();
+          }
         });
       });
     },
